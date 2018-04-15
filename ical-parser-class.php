@@ -2,13 +2,6 @@
 
 class Ical
 {
-	public $folders;
-
-	public function __construct()
-	{
-		$this->folders = 'cache/import/';
-	}
-
 	public function iCalReader($filename, $rootDirectory = '')
 	{
 		$iCaltoArray = $this->iCalDecoder($filename, $rootDirectory);
@@ -18,7 +11,7 @@ class Ical
 
 	public function iCalDecoder($file, $rootDirectory)
 	{
-		$ical = file_get_contents($rootDirectory . $this->folders . $file);
+		$ical = file_get_contents($rootDirectory . $file);
 		preg_match_all('/BEGIN:VEVENT.*?END:VEVENT/si', $ical, $eventresult, PREG_PATTERN_ORDER);
 		preg_match_all('/BEGIN:VTODO.*?END:VTODO/si', $ical, $todoresult, PREG_PATTERN_ORDER);
 		$countEventResult = count($eventresult[0]);

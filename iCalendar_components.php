@@ -13,13 +13,13 @@ require_once 'modules/Vtiger/helpers/Util.php';
 require_once 'modules/PickList/DependentPickListUtils.php';
 require_once 'modules/Users/Users.php';
 require_once 'include/Webservices/Utils.php';
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/Icalendar.php');
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/IcalendarAlarm.php');
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/IcalendarEvent.php');
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/IcalendarFreebusy.php');
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/IcalendarJournal.php');
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/IcalendarTimezone.php');
-Vtiger_Loader::includeOnce('~modules/Calendar/iCal/IcalendarTodo.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/Icalendar.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/IcalendarAlarm.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/IcalendarEvent.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/IcalendarFreebusy.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/IcalendarJournal.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/IcalendarTimezone.php');
+Vtiger_Loader::includeOnce('~vendor/yetiforce/icalendar/IcalendarTodo.php');
 
 class IcalendarComponent
 {
