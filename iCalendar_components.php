@@ -262,11 +262,7 @@ class IcalendarComponent
 	{
 		$activity = [];
 		$activitytype = $ical_activity['TYPE'];
-		if ($activitytype == 'VEVENT') {
-			$modtype = 'Events';
-		} else {
-			$modtype = 'Calendar';
-		}
+		$modtype = 'Calendar';
 		foreach ($this->mapping_arr as $key => $comp) {
 			$type = $comp['type'];
 			$component = $comp['component'];
